@@ -1,0 +1,47 @@
+.images{
+    width: 100%;
+    object-fit: contain;
+    padding:0;
+}
+.image_container{
+    width:auto;
+    max-width:21vw;
+}
+
+.image_gradient{
+    position:absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    width:100%;
+    background: linear-gradient(156.82deg,
+    rgba(0,0,0,0.6)4.58%,rgba(0,0,0,0)69.61%),linear-gradient(24.5deg,
+    rgba(0,0,0,0.2)4.71%,rgba(0,0,0,0)71.49%)
+    /* background-color: white; */
+}
+.image_button{
+   background-color: transparent;
+   border: none;
+   position:relative;
+   margin:.5rem;
+   cursor: pointer;
+}
+.text{
+    position: absolute;
+    top:10px;
+    color:white;
+    left:1.5rem;
+    padding:.25rem;
+    font-size: .75rem;
+    
+}
+.title{
+    position: absolute;
+    top:2.5rem;
+    color:white;
+    left:1.5rem;
+    font-size: 1.25rem;
+    padding:.25rem;
+    margin-top:.5rem;
+    /* text-transform: uppercase; */
+}
