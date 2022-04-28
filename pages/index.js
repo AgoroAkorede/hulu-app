@@ -3,8 +3,10 @@ import HomepageTop from '../components/homepage-top'
 import HomepageMiddle from '../components/homepage-middle'
 // import {HomepageMiddle} from '../components
 import requests from '../utils/requests'
+import Results from '../components/results/Results'
 
-export default function Home({results}) {
+export default function Home({ results }) {
+    // console.log(results)
     return (
         <div>
             <Head>
@@ -12,7 +14,8 @@ export default function Home({results}) {
                 <link rel='icon' href='https://assetshuluimcom-a.akamaihd.net/h3o/icons/favicon.ico.png' />
             </Head>
                 <HomepageTop />
-                <HomepageMiddle results={results} />
+            <HomepageMiddle results={ results } />
+            {/* <Results results={results} /> */}
         </div>
     )
 }

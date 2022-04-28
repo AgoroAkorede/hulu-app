@@ -9,5 +9,9 @@ export default {
     fetchTopRated: {
         title: 'Top Rated',
         url:`/movie/top_rated?api_key=${API_KEY}&language=en-US`
-    }
+    },
+    fetchActionMovies: {
+        title: 'Action',
+        url:`/movie/?api_key=${API_KEY}&with_genres`
+    },
 }
