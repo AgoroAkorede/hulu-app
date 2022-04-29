@@ -38,7 +38,8 @@ console.log(request)
     return {
         props:{
             results:request.results
-        }
+        },
+        revalidate:1,
     }
 }
 export default Search
