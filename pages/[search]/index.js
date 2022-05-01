@@ -4,6 +4,12 @@ import requests from '../../utils/requests'
 import { useRouter } from 'next/router'
 import Results from '../../components/results/Results'
 
+import _ from 'lodash';
+
+function prepareForSerializatoin(obj) {
+    return _obj.mapValue(obj, value => typeof value === 'undefined' ? null : value);
+}
+
 function Search({results}) {
     const router = useRouter();
     return (
@@ -35,11 +41,10 @@ export async function getServerSideProps(context) {
     ).then((response) => response.json())
 console.log(request)
 
-    return {
-        props:{
-            results:request.results
-        },
-        revalidate:1,
-    }
+return {
+    props: {
+      results: request.results,
+    },
+  }
 }
 export default Search

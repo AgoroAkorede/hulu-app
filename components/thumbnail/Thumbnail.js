@@ -1,10 +1,13 @@
 import Image from "next/image"
 
+import classes from './Thumbnail.module.css';
+
 function Thumbnail({ result }) {
     const BASE_URL="https://image.tmdb.org/t/p/original/"
     return (
-        <div>
+        <div className={classes.container}>
             <Image
+                className={classes.img}
                 layout='responsive'
                 src=
                 { `${BASE_URL}${result.backdrop_path || result.poster_path}` ||
@@ -13,6 +16,7 @@ function Thumbnail({ result }) {
                 height={ 1080 } width={ 1920 } 
                 
                 />
+                 <h2 className={classes.title}>{ result.title || result.original_name }</h2>
         </div>
     )
 }

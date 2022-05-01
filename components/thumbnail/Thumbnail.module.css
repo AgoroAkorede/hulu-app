@@ -1,0 +1,20 @@
+.img{
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    position: relative;
+    filter:brightness(70%);
+    -webkit-filter:brightness(70%);
+}
+.container{
+    background-color: transparent;
+    border:transparent;
+    height: 100%;
+    cursor:pointer;
+}
+
+.title{
+    bottom:10%;
+}
