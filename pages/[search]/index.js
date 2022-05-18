@@ -47,4 +47,5 @@ return {
     },
   }
 }
+
 export default Search

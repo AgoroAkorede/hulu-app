@@ -1,6 +1,7 @@
  import classes from './homepage-middle.module.css'
 import ImageCard from '../components/image-card/image-card'
 import ScrollDown from '../components/scrollDown/scrollDown.component'
+import RowResults from '../components/rowResults/RowResults'
 
 function HomepageMiddle() {
     return (
@@ -41,10 +42,27 @@ function HomepageMiddle() {
                 
                 {/* <ScrollDown /> */}
             </div>
+            <RowResults />
             
         </div>
     )
 }
 
+export async function getServerSideProps(context) {
+    const genre = context.query.genre;
+
+    const request = await fetch(
+        `https://api.themoviedb.org/3/${
+        requests[ genre ]?.url || requests.fetchTrending.url
+        }`
+    ).then((response) => response.json())
+console.log(request)
+
+return {
+    props: {
+      results: request.results,
+    },
+  }
+}
 
 export default HomepageMiddle

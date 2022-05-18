@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import HomepageTop from '../components/homepage-top'
 import HomepageMiddle from '../components/homepage-middle'
-// import {HomepageMiddle} from '../components
+import SpotlightComponent from '../components/SpotlightTab/SpotlightComponent'
 import requests from '../utils/requests'
 import Results from '../components/results/Results'
 
@@ -15,6 +15,7 @@ export default function Home({ results }) {
             </Head>
                 <HomepageTop />
             <HomepageMiddle results={ results } />
+            <SpotlightComponent />
             {/* <Results results={results} /> */}
         </div>
     )

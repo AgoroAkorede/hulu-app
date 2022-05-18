@@ -1,0 +1,18 @@
+.thumbnail{
+    height:3rem;
+}
+.results{
+    margin:3rem;
+    display:grid;
+    /* flex-wrap:wrap; */
+    width:90vw;
+    overflow:hidden;
+    grid-gap:1.5rem;
+    grid-template-columns:repeat(4,4fr);
+    /* grid-template-rows:repeat(5,20vw); */
+    overflow-x: hidden;
+    
+}
+.more_info{
+    display:flex;
+}
