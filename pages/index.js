@@ -4,9 +4,14 @@ import HomepageMiddle from '../components/homepage-middle'
 import SpotlightComponent from '../components/SpotlightTab/SpotlightComponent'
 import requests from '../utils/requests'
 import Results from '../components/results/Results'
+import HomepageFooter from '../components/homepage-footer/homepage-footer'
+import Image from "next/image"
+
+import FeaturedTv from '../components/featuredTv/featuredTv'
+import {Data} from '../data'
 
 export default function Home({ results }) {
-    // console.log(results)
+    console.log(Data.featuredData)
     return (
         <div>
             <Head>
@@ -16,7 +21,11 @@ export default function Home({ results }) {
                 <HomepageTop />
             <HomepageMiddle results={ results } />
             <SpotlightComponent />
-            {/* <Results results={results} /> */}
+            <HomepageFooter />
+            <FeaturedTv results={ Data.featuredData } />
+            {/* <FeaturedTv /> */ }
+            {/* <Image src={Data.featuredData[0].imageURl} layout='responsive' height={1080} width={1920}  /> */}
+           
         </div>
     )
 }

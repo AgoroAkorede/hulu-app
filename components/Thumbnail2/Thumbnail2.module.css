@@ -1,0 +1,22 @@
+.img{
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    position: relative;
+    filter:brightness(70%);
+    -webkit-filter:brightness(70%);
+    height:5rem;
+}
+.container{
+    background-color: transparent;
+    border:transparent;
+    height: 100%;
+    cursor:pointer;
+}
+
+.title{
+    bottom:10%;
+    font-weight: 700;
+}

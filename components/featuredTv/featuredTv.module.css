@@ -1,0 +1,27 @@
+
+.thumbnail{
+    height:3rem;
+}
+.results{
+    margin:3rem;
+    display:grid;
+    overflow-y:hidden;
+    grid-gap:1.5rem;
+    grid-template-columns:repeat(15,20vw);
+    overflow-x: scroll;
+    font-size: .85rem;
+}
+.title{
+    font-size: .75rem;
+    margin-left: 3rem;
+    font-weight: 800;
+}
+
+.results::-webkit-scrollbar{
+    display: none;
+}
+
+.more_info{
+    display:flex;
+    
+}

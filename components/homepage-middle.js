@@ -1,7 +1,7 @@
  import classes from './homepage-middle.module.css'
 import ImageCard from '../components/image-card/image-card'
 import ScrollDown from '../components/scrollDown/scrollDown.component'
-import RowResults from '../components/rowResults/RowResults'
+
 
 function HomepageMiddle() {
     return (
@@ -42,7 +42,7 @@ function HomepageMiddle() {
                 
                 {/* <ScrollDown /> */}
             </div>
-            <RowResults />
+          
             
         </div>
     )

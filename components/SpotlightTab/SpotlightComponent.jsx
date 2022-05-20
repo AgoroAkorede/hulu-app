@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import classes from './SpotlightComponent.module.css'
 import { loadGetInitialProps } from 'next/dist/shared/lib/utils'
 import './SpotlightComponent.module.css'
+
 function SpotlightComponent() {
     const [ background, setBackground ] = useState(
         ` linear-gradient(90deg, rgba(0, 0, 0, 0.8) -57.5%, rgba(0, 0, 0, 0) 98.72%),url("https://www.hulu.com/static/hitch/s3/attachments/ckzyp3x8ycmjp1k4e5pc5p9n9-ckuh9mwjj08j01v4q0ur1z6x1-ckqwp2zlfc1zx1u362echneor-sports-v3-1600x850-min-full.jpg")`)
@@ -11,10 +12,7 @@ function SpotlightComponent() {
     const [width, setWidth]=useState('5.5rem')
     const [ article, setArticle ] = useState('Catch your games at home or on the go. Stream live games from major college and pro leagues including the NCAA®, NBA, NHL, NFL, and more.')
     const [title, setTitle]=useState('Live Sport')
-    
-    const changeStyle = () => {
-        setStyleText("cont")
-    }
+ 
     
     const backgroundImage = [
         {

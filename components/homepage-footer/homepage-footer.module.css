@@ -1,0 +1,21 @@
+.homepage_footer{
+    background-color: rgb(206, 205, 205);
+    min-height: 50vh;
+    color: rgb(29, 28, 28);
+    margin: 0;
+    padding: 4rem;
+    font-size: .95rem;
+    font-weight: 500;
+}
+.homepage_footer_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.homepage_footer_link{
+    list-style: none;
+    font-size: .85rem;
+    font-weight: 200;
+    cursor: pointer;
+}
