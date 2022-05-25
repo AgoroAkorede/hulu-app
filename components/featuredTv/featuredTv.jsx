@@ -13,9 +13,11 @@ function FeaturedTv({ results, title }) {
     // const prevSlide = () => {
     //     document.getElementById('results').scrollLeft -=700
     // }
-    const button1=document.querySelectorAll("btnLeft")
-   
-  
+    const buttonArr=document.querySelectorAll("btnLeft")
+    const rewsultsArr=document.querySelectorAll("results")
+    buttonArr[ 0 ].addEventlistener('click', () => {
+        rewsultsArr[0].scrollLeft+=700
+    })
     
     return (
         <div  className={ classes.featured }>
