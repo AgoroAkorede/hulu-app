@@ -2,6 +2,9 @@
 .thumbnail{
     height:3rem;
 }
+.featured{
+    position: relative;
+}
 .results{
     margin:3rem;
     display:grid;
@@ -10,11 +13,55 @@
     grid-template-columns:repeat(15,20vw);
     overflow-x: scroll;
     font-size: .85rem;
+    scroll-behavior: smooth;
+}
+.buttonLeft{
+    position: absolute;
+    top: 40%;
+    left: 2rem;
+    background-color: white;
+    cursor: pointer;
+    height: 3vw;
+    width: 3vw;
+    border-radius:50% ;
+    -webkit-border-radius:50% ;
+    -moz-border-radius:50% ;
+    -ms-border-radius:50% ;
+    -o-border-radius:50% ;
+    z-index: 10;
+    border: none;
+    font-size: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+.buttonRight{
+    position: absolute;
+    top: 40%;
+    right: 2rem;
+    background-color: white;
+    cursor: pointer;
+    height: 3vw;
+    width: 3vw;
+    border-radius:50% ;
+    -webkit-border-radius:50% ;
+    -moz-border-radius:50% ;
+    -ms-border-radius:50% ;
+    -o-border-radius:50% ;
+    z-index: 10;
+    border: none;
+    font-size: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
 }
 .title{
     font-size: .75rem;
     margin-left: 3rem;
     font-weight: 800;
+
 }
 
 .results::-webkit-scrollbar{

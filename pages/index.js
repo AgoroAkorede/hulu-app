@@ -8,6 +8,7 @@ import HomepageFooter from '../components/homepage-footer/homepage-footer'
 import Image from "next/image"
 
 import FeaturedTv from '../components/featuredTv/featuredTv'
+
 import {Data} from '../data'
 
 export default function Home({ results }) {
@@ -22,9 +23,12 @@ export default function Home({ results }) {
             <HomepageMiddle results={ results } />
             <SpotlightComponent />
             <HomepageFooter />
-            <FeaturedTv results={ Data.featuredData } />
-            {/* <FeaturedTv /> */ }
-            {/* <Image src={Data.featuredData[0].imageURl} layout='responsive' height={1080} width={1920}  /> */}
+            <FeaturedTv results={ Data.featuredData } title="FEATURED TV" />
+            <FeaturedTv results={ Data.adultAnimation } title="ADULT ANIMATION" />
+            <FeaturedTv results={ Data.FXonHulu } title="FX ON HULU" />
+            <FeaturedTv results={ Data.RealityTv } title="REALITY TV" />
+            <FeaturedTv results={ Data.Binge_WorthyTV } title="BINGE-WORTHY TV" />
+           
            
         </div>
     )

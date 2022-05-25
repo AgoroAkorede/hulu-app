@@ -272,18 +272,9 @@ export const Data= {
             categories: "Adult Animation, Comedy",
             productionYear:"2013"
         },
+        
         {
             id: 12,
-            imageURl: "https://img4.hulu.com/user/v3/artwork/d76d6361-3fbf-4842-8dd7-e05520557280?base_image_bucket_name=image_manager&base_image=18bff3f4-be07-48f5-8886-2467e3ce448b&size=600x338&format=jpeg",
-            movieTitle: "Rick and Morty",
-            movieDescription: "",
-            originality: true,
-            contentRating: "TV14",
-            categories: "Adult Animation, Comedy",
-            productionYear:"2013"
-        },
-        {
-            id: 13,
             imageURl: "https://img4.hulu.com/user/v3/artwork/f089664b-1a87-433b-86a5-24e7da5a246a?base_image_bucket_name=image_manager&base_image=75f9f421-a276-4a09-9d68-990a8a4917f5&size=600x338&format=jpeg",
             movieTitle: "Solar Oposites",
             movieDescription: "",
@@ -585,7 +576,7 @@ export const Data= {
                 },
                 {
                     id: 5,
-                    imageURl: "https://img4.hulu.com/user/v3/artwork/22edd129-fede-4419-b74a-102428475d1a?base_image_bucket_name=image_manager&base_image=9abd6cb0-e176-4214-a0c5-92be1aa73afa&size=600x338&format=jpeg",
+                    imageURl: "https://img.hulu.com/user/v3/artwork/c9d3b601-54db-42d1-a1ed-8950cea491b1?base_image_bucket_name=image_manager&base_image=3631b7d2-705e-43bf-bd77-78b33ab60f86&size=600x338&format=jpeg",
                     movieTitle: "Killing Eve",
                     movieDescription: "",
                     originality: false,
@@ -595,76 +586,87 @@ export const Data= {
                 },
                  {
                     id: 6,
-                    imageURl: "https://img2.hulu.com/user/v3/artwork/86e9eb70-0a7e-4686-b9d4-81735bd600c6?base_image_bucket_name=image_manager&base_image=3976652b-01f1-4818-9f23-4c0a5ebb2aa2&size=600x338&format=jpeg",
-                    movieTitle: "Baker's Dozen",
+                    imageURl: "https://img.hulu.com/user/v3/artwork/8c87035d-2b10-4b10-a233-ca5b3597145d?base_image_bucket_name=image_manager&base_image=9635da5d-5ca9-458a-9e2c-21b25a590fb6&size=600x338&format=jpeg",
+                    movieTitle: "PEN 15",
                     movieDescription: "",
                     originality: true,
-                    contentRating: "TVMA, Science Fiction",
+                    contentRating: "Comedy",
                     categories: "Drama",
-                    productionYear:"2021"
+                    productionYear:"2019"
                 },
                 {
                     id: 7,
                     imageURl: "https://img2.hulu.com/user/v3/artwork/ad993806-7961-4eb3-9f92-e7b9a349ae22?base_image_bucket_name=image_manager&base_image=3384917c-a4ca-4fa7-bcc8-16f49c85665f&size=600x338&format=jpeg",
-                    movieTitle: "The D'Amelio Show",
+                    movieTitle: "How I Met Your Mother",
                     movieDescription: "",
                     originality: true,
                     contentRating: "TV14",
-                    categories: "Reality, celebrity",
-                    productionYear:"2021"
+                    categories: "Comedy,Sitcom",
+                    productionYear:"2005"
                 },
                 {
                     id: 8,
-                    imageURl: "https://img3.hulu.com/user/v3/artwork/fb03e9a3-8ce2-4e39-bd53-8920c7f5edc5?base_image_bucket_name=image_manager&base_image=0714899c-0896-4fe1-b13b-6f6f4117c95e&size=600x338&format=jpeg",
-                    movieTitle: "Catfish:The Tv Show",
-                    movieDescription: "",
-                    originality: false,
-                    contentRating: "TVPG",
-                    categories: "Comedy",
-                    productionYear:"2000"
-                },
-                {
-                    id: 9,
-                    imageURl: "https://img4.hulu.com/user/v3/artwork/c4d76077-0911-49b4-957e-19c0db20d4ab?base_image_bucket_name=image_manager&base_image=a4b1d278-c383-4c26-8afc-392b57c98b5d&size=600x338&format=jpeg",
-                    movieTitle: "My 600-Ib Life",
-                    movieDescription: "",
-                    originality: false,
-                    contentRating: "TVPG",
-                    categories: "Documentaries, Reality",
-                    productionYear:"2014"
-                },
-                {
-                    id: 10,
-                    imageURl: "https://img2.hulu.com/user/v3/artwork/e3b93210-7e03-471f-8270-0e17161809a8?base_image_bucket_name=image_manager&base_image=9b9cf897-85d9-4a72-8f5c-84c3d6679bf5&size=600x338&format=jpeg",
-                    movieTitle: "Love Island(UK)",
-                    movieDescription: "",
-                    originality: true,
-                    contentRating: "TVMA",
-                    categories: "Reality",
-                    productionYear:"2015"
-                },
-                {
-                    id: 11,
-                    imageURl: "https://img4.hulu.com/user/v3/artwork/e7db9d02-6b73-4ed1-96ba-cd0d1950ba04?base_image_bucket_name=image_manager&base_image=2660a1eb-1f87-4159-ada5-097898be6f66&size=600x338&format=jpeg",
-                    movieTitle: "Keeping Up With the Kardashians",
+                    imageURl: "https://img2.hulu.com/user/v3/artwork/dadfb0d8-f1f3-4229-a56f-25a7d5c9f87d?base_image_bucket_name=image_manager&base_image=d3c90156-1169-448b-8a5d-5a03f74e6ca0&size=600x338&format=jpeg",
+                    movieTitle: "Grown-ish",
                     movieDescription: "",
                     originality: false,
                     contentRating: "TV14",
-                    categories: "Reality",
-                    productionYear:"2007"
+                    categories: "Comedy,Drama",
+                    productionYear:"2018"
+                },
+                {
+                    id: 9,
+                    imageURl: "https://img1.hulu.com/user/v3/artwork/7555c5c5-2552-41b1-b1fd-20e983cb4905?base_image_bucket_name=image_manager&base_image=17625d0c-e15e-4902-ae1c-3d4ef88c4dd4&size=600x338&format=jpeg",
+                    movieTitle: "American Idol",
+                    movieDescription: "",
+                    originality: false,
+                    contentRating: "TVPG",
+                    categories: "Reality, Family",
+                    productionYear:"2018"
+                },
+                {
+                    id: 10,
+                    imageURl: "https://img1.hulu.com/user/v3/artwork/727810b8-e54b-4f01-9381-a79ab5661bf7?base_image_bucket_name=image_manager&base_image=3d674a80-65e6-4308-aa29-be59c40ba014&size=600x338&format=jpeg",
+                    movieTitle: "Superstore",
+                    movieDescription: "",
+                    originality: false,
+                    contentRating: "TV14",
+                    categories: "Comedy",
+                    productionYear:"2020"
+                },
+                {
+                    id: 11,
+                    imageURl: "https://img1.hulu.com/user/v3/artwork/44e1031e-f7ac-443d-86d2-7a2eaa26ed5b?base_image_bucket_name=image_manager&base_image=2766659a-be4a-469b-9594-4f38fe403439&size=600x338&format=jpeg",
+                    movieTitle: "30 Rock",
+                    movieDescription: "",
+                    originality: false,
+                    contentRating: "TV14",
+                    categories: "Comedy, Sitcom",
+                    productionYear:"2006"
                 },
                 {
                     id: 12,
-                    imageURl: "https://img3.hulu.com/user/v3/artwork/20ed5e79-3fba-4eda-8d84-ed6e33f9a019?base_image_bucket_name=image_manager&base_image=035d4fce-1d13-46d0-904b-f59bd55bd8cf&size=600x338&format=jpeg",
-                    movieTitle: "Shark Tank",
+                    imageURl: "https://img.hulu.com/user/v3/artwork/883c414c-34a3-4fcc-b50a-0ad5a184c977?base_image_bucket_name=image_manager&base_image=e4f9fac4-459e-4019-a41f-2f52c4e6f4c6&size=600x338&format=jpeg",
+                    movieTitle: "Modern Family",
                     movieDescription: "",
                     originality: false,
-                    contentRating: "TVMA",
-                    categories: "Science Fiction, Drama",
-                    productionYear:"2017"
+                    contentRating: "TV14",
+                    categories: "Family, Comedy",
+                    productionYear:"2009"
                 },
-                
+                {
+                    id: 13,
+                    imageURl: "https://img.hulu.com/user/v3/artwork/d2140705-8ef8-4b80-aa5e-d568447508dc?base_image_bucket_name=image_manager&base_image=559b37d0-acb0-4037-a1c1-5b087687b5cd&size=600x338&format=jpeg",
+                    movieTitle: "Sister, Sister",
+                    movieDescription: "",
+                    originality: false,
+                    contentRating: "TVG",
+                    categories: "Comedy, Sitcom",
+                    productionYear:"1994"
+                },
+               
                 ]
            
         
 }
+
