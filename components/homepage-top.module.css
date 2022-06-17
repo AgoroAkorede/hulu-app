@@ -40,19 +40,32 @@
     width:60vw;
 }
 .logo_image{
-    width:45vw;
+    width:47.5vw;
 }
 .button{
     padding: .75rem 1.5rem;
     border:none;
-    background-color:white;
-    border-radius:2px;
-    -webkit-border-radius:2px;
-    -moz-border-radius:2px;
-    -ms-border-radius:2px;
-    -o-border-radius:2px;
+    background-color:rgb(30, 226, 128);
+    /*color: white;
+    */border-radius:4px;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    -ms-border-radius:4px;
+    -o-border-radius:4px;
     text-transform: uppercase;
     font-weight:600;
+    width: 50%;
+    height: 3rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition:all 500ms ;
+    -webkit-transition:all 500ms ;
+    -moz-transition:all 500ms ;
+    -ms-transition:all 500ms ;
+    -o-transition:all 500ms ;
+}
+.button:hover{
+    background-color:rgba(30, 226, 128, 0.582);
 }
 .page_title{
     font-size: 1.35rem;

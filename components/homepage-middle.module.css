@@ -5,6 +5,8 @@
    flex-direction: column;
    align-items: center;
    font-weight:500;
+   position: relative;
+   margin-top: 2rem;
  
 }
 .top{
@@ -15,7 +17,7 @@
    align-items: center;
 }
 .text{
-    color:rgb(30, 226, 128);
+    color:rgb(90, 231, 161);
     font-size: 0.9rem;
     text-transform: uppercase;
     text-align:center;
@@ -51,6 +53,7 @@
    flex-direction: row;
    width:95vw;
     flex-wrap:wrap;
+    margin-bottom: 10rem;
 }
 .special_text{
     text-decoration: underline;
@@ -67,4 +70,51 @@
     margin-bottom:0.5rem;
     text-align:center;
     font-weight:700;
+}
+.scrollDown{
+    display: grid;
+   place-items: center;
+    fill: white;
+    margin-bottom: 4rem;
+    text-align: center;
+   
+}
+
+.icon{
+    width:1.2rem;
+    animation: 1.2s infinite bounce;
+    -webkit-animation: 1.2s infinite bounce alternate cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    cursor: pointer;
+}
+
+@keyframes bounce{
+    0%{
+        transform:translateY(-10%)   ;
+        -webkit-transform:translateY(-10%)   ;
+        -moz-transform:translateY(-10%)   ;
+        -ms-transform:translateY(-10%)   ;
+        -o-transform:translateY(-10%)   ;
+}
+100%{
+    transform:translateY(10%)   ;
+    -webkit-transform:translateY(10%)   ;
+    -moz-transform:translateY(10%)   ;
+    -ms-transform:translateY(10%)   ;
+    -o-transform:translateY(10%)   ;
+}
+}
+.collections{
+    position: absolute;
+    top:40vh;
+    width: 85vw;
+    z-index: 100;
+    background-color: hsl(240, 8%, 10%);
+    height: 150vh;
+    margin-bottom: 100vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    
+}
+.collections::-webkit-scrollbar{
+    display: none;
 }

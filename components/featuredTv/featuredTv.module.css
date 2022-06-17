@@ -3,14 +3,17 @@
     height:3rem;
 }
 .featured{
+    
     position: relative;
+    margin-left:3.75vw;
+    margin-right: 3.5vw;
 }
 .results{
-    margin:3rem;
+    margin-top:3rem;
     display:grid;
     overflow-y:hidden;
-    grid-gap:1.5rem;
-    grid-template-columns:repeat(15,20vw);
+    grid-gap:3rem;
+    grid-template-columns:repeat(15,16vw);
     overflow-x: scroll;
     font-size: .85rem;
     scroll-behavior: smooth;
@@ -35,6 +38,7 @@
     justify-content: center;
     align-items: center;
     user-select: none;
+    display: none;
 }
 .buttonRight{
     position: absolute;
@@ -56,12 +60,12 @@
     justify-content: center;
     align-items: center;
     user-select: none;
+    display: none;
 }
 .title{
-    font-size: .75rem;
+    font-size: 1rem;
     margin-left: 3rem;
-    font-weight: 800;
-
+    font-weight: 600;
 }
 
 .results::-webkit-scrollbar{
@@ -70,5 +74,4 @@
 
 .more_info{
     display:flex;
-    
 }

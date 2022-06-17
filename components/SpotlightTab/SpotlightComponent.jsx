@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import classes from './SpotlightComponent.module.css'
-import { loadGetInitialProps } from 'next/dist/shared/lib/utils'
 import './SpotlightComponent.module.css'
 
 function SpotlightComponent() {

@@ -1,10 +1,11 @@
 export const Data= {
     featuredData: [
         {
-            id: 1,
+            id: 0,
             imageURl: "https://img3.hulu.com/user/v3/artwork/2ce80ed9-7ab6-44de-8434-f7dadb6ec11b?base_image_bucket_name=image_manager&base_image=c7369bf5-202c-497f-8d56-5f44c13f0fd1&size=600x338&format=jpeg",
             movieTitle: "Candy",
-            movieDescription: "",
+            movieDescription: "Candy Montgomery is a 1980's housewife and mother who did everything right: a good husband, two kids, even the careful planning and execution of transgressions, but when the pressure of conformity builds up, her actions scream for a bit of freedom.",
+            rating:7.2,
             originality: true,
             contentRating: "TVMA",
             categories: "Crime,Drama",
@@ -14,8 +15,9 @@ export const Data= {
             id: 2,
             imageURl: "https://img4.hulu.com/user/v3/artwork/9c4ae394-e9c4-4a6d-985e-314270602c6b?base_image_bucket_name=image_manager&base_image=ed37f455-7cbf-4b23-a9ec-a8a0d7271135&size=600x338&format=jpeg",
             movieTitle: "Under The Banner of Heaven",
-            movieDescription: "",
+            movieDescription: "As Detective Jeb Pyre investigates the murder of Brenda Wright Lafferty and her baby daughter in a suburb in the Salt Lake Valley, he uncovers buried truths about the origins of the LDS religion and the violent consequences of unyielding faith.",
             originality: true,
+            rating:7.6,
             contentRating: "TVMA",
             categories: "Crime,Drama",
             productionYear: "2022"
@@ -24,8 +26,9 @@ export const Data= {
             id: 3,
             imageURl: "https://img2.hulu.com/user/v3/artwork/ea57ec26-db49-499d-aabc-a5dfa23dd96f?base_image_bucket_name=image_manager&base_image=6f1b88bf-b01b-4947-9379-9e52fee64b1d&size=600x338&format=jpeg",
             movieTitle: "Mayans M.C.",
-            movieDescription: "",
+            movieDescription: "Ezekiel Reyes is a former convict who returns to his hometown with a new outlook on life. He becomes a gangster and falls deeper into the world of crime.",
             originality: false,
+            rating:7.5,
             contentRating: "TVMA",
             categories: "Documentaries",
             productionYear: "2022"
@@ -34,8 +37,9 @@ export const Data= {
             id: 4,
             imageURl: "https://img3.hulu.com/user/v3/artwork/d840873f-211e-47a8-864b-8aa7c54d193c?base_image_bucket_name=image_manager&base_image=abf7c178-79d4-41a2-a8c0-b1ded1741dc0&size=600x338&format=jpeg",
             movieTitle: "Captive Audience: A Real American Horror Story",
-            movieDescription: "",
+            movieDescription: "The evolution of true-crime storytelling is told through lens of the 1972 kidnapping of seven-year-old Steven Stayner, which sparked 'stranger danger' warnings, legal reforms and the making of a miniseries titled `I Know My First Name Is Steven'.",
             originality: false,
+            rating:"no rating",
             contentRating: "TVMA",
             categories: "Drama, Crimes",
             productionYear: "2018"
@@ -44,8 +48,9 @@ export const Data= {
             id: 5,
             imageURl: "https://img4.hulu.com/user/v3/artwork/7840bf30-f440-48d4-bf81-55d8cb24457a?base_image_bucket_name=image_manager&base_image=b4ef0989-34ca-4c42-ba3c-ceadd7a51193&size=600x338&format=jpeg",
             movieTitle: "The Kardashians",
-            movieDescription: "",
+            movieDescription: "Kris, Kourtney, Kim, Khloé, Kendall, and Kylie tell their stories of love and life in the spotlight, from the pressures of running billion-dollar businesses to the joys of playtime and school drop-offs.",
             originality: true,
+            rating:4.4,
             contentRating: "TV14",
             categories: "Reality",
             productionYear: "2022"
@@ -54,8 +59,9 @@ export const Data= {
             id: 6,
             imageURl: "https://img1.hulu.com/user/v3/artwork/3529d0f1-acaf-476d-8be3-66cd6bf12530?base_image_bucket_name=image_manager&base_image=b4b8d080-1b93-488a-bc8f-e72a00ea6871&size=600x338&format=jpeg",
             movieTitle: "Atlanta",
-            movieDescription: "",
+            movieDescription: "Earn works as a manager for his cousin Alfred, an upcoming rapper, and they try to make a name for themselves in the music industry. Earn struggles with providing for his child and lover.",
             originality: false,
+            rating:8.4,
             contentRating: "TVMA",
             categories: "Comedy, Drama",
             productionYear: "2016"
