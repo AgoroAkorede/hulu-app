@@ -20,7 +20,14 @@ function FeaturedTv({ results, title }) {
         <Carousel>
           <div id="results" className={classes.results}>
             {results.map((result) => (
-              <div onClick={() => router.push(`/shows/${result.id - 1}`)}>
+              <div
+                onClick={() =>
+                  router.push(
+                    `/shows/${result.id === 0 ? result.id : result.id - 1}`
+                  )
+                  // console.log(result.id)
+                }
+              >
                 <Thumbnail2
                   className={classes.thumbnail}
                   key={result.id}

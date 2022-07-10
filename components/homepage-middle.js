@@ -53,22 +53,11 @@ function HomepageMiddle() {
           image="https://www.hulu.com/static/hitch/s3/attachments/ckzix9rkis6t31v5mteb3tnon-ckzix7nm8s6q01v5mrhx8mjms-cktarx0vs0o9q1w7av35olnl8-nine-perfect-strangers-category-poster-tile-294x450-2x-full-full.jpg"
         />
         <ImageCard
-          onClick={console.log("Mr Morale and The Big Steppers")}
           text="Add on"
           title="Premiums"
           image="https://www.hulu.com/static/hitch/s3/attachments/ckzixaonhhgrc1k6w2bn2vte1-cktaw41ct0trg1v5yjb2aysun-billions-category-poster-tile-v1-294x450-2x-full.jpg"
         />
           </div>
-          {/* <div style={{ maxWidth: 1200, marginLeft: 'auto', marginRight: 'auto', marginTop: 64 }}>
-            <Carousel>
-                <img src="https://via.placeholder.com/1600x300" alt="placeholder" />
-                <img src="https://via.placeholder.com/1600x300" alt="placeholder" />
-                <img src="https://via.placeholder.com/1600x300" alt="placeholder" />
-            </Carousel>
-        </div> */}
-
-        
-
       <div>
         <p className={classes.text}>
           HULU + LIVE TV, NOW WITH DISNEY+ AND ESPN+

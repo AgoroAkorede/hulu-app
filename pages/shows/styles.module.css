@@ -4,8 +4,9 @@
   font-size: 3rem;
   font-weight: 700;
   list-style: none;
-    width: 25vw;
+    width: 35vw;
     flex-wrap: wrap;
+    text-align: center;
 }
 .page {
   margin: 0;
@@ -18,12 +19,13 @@
 .categories {
   position: absolute;
   left: 0;
-  top: 25vh;
+  top: 10vh;
   width: 25vw;
   /* color: grey; */
   z-index: 10;
   margin: 1rem;
   height: 25vh;
+  /* text-align: center; */
 }
 .categories_content {
   list-style: none;
@@ -33,7 +35,7 @@
 .image_container {
   position: absolute;
   right: 0%;
-  width: 70vw;
+  width: 60vw;
   margin: 3vw 1vw;
   border: solid 2px #1ee280;
   border-radius: 40px;

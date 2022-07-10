@@ -1,6 +1,7 @@
 import React from "react";
 import FeaturedTv from "../featuredTv/featuredTv";
-import { Data } from "../../data";
+import AdultAnimation from "../adultAnimation/adultAnimation";
+import { Data,data2 } from "../../data";
 import classes from "./showsCollections.module.css";
 import Image from "next/image";
 import CloseModal from '../../assets/closeModal.svg'
@@ -22,7 +23,8 @@ function ShowsCollections({ img, title, content,close }) {
       <FeaturedTv results={Data.adultAnimation} title="ADULT ANIMATION" />
       <FeaturedTv results={Data.FXonHulu} title="FX ON HULU" />
       <FeaturedTv results={Data.RealityTv} title="REALITY TV" />
-      <FeaturedTv results={Data.Binge_WorthyTV} title="BINGE-WORTHY TV" />
+      <FeaturedTv results={ Data.Binge_WorthyTV } title="BINGE-WORTHY TV" />
+      {/* <AdultAnimation  /> */}
     </div>
   );
 }

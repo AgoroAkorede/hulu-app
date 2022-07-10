@@ -1,0 +1,77 @@
+
+.thumbnail{
+    height:3rem;
+}
+.featured{
+    
+    position: relative;
+    margin-left:3.75vw;
+    margin-right: 3.5vw;
+}
+.results{
+    margin-top:3rem;
+    display:grid;
+    overflow-y:hidden;
+    grid-gap:3rem;
+    grid-template-columns:repeat(15,16vw);
+    overflow-x: scroll;
+    font-size: .85rem;
+    scroll-behavior: smooth;
+}
+.buttonLeft{
+    position: absolute;
+    top: 40%;
+    left: 2rem;
+    background-color: white;
+    cursor: pointer;
+    height: 3vw;
+    width: 3vw;
+    border-radius:50% ;
+    -webkit-border-radius:50% ;
+    -moz-border-radius:50% ;
+    -ms-border-radius:50% ;
+    -o-border-radius:50% ;
+    z-index: 10;
+    border: none;
+    font-size: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    display: none;
+}
+.buttonRight{
+    position: absolute;
+    top: 40%;
+    right: 2rem;
+    background-color: white;
+    cursor: pointer;
+    height: 3vw;
+    width: 3vw;
+    border-radius:50% ;
+    -webkit-border-radius:50% ;
+    -moz-border-radius:50% ;
+    -ms-border-radius:50% ;
+    -o-border-radius:50% ;
+    z-index: 10;
+    border: none;
+    font-size: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    display: none;
+}
+.title{
+    font-size: 1rem;
+    margin-left: 3rem;
+    font-weight: 600;
+}
+
+.results::-webkit-scrollbar{
+    display: none;
+}
+
+.more_info{
+    display:flex;
+}

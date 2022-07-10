@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import { Data } from "../../data";
+import { Data, data2 } from "../../data";
 import Image from "next/image";
 import Head from "next/head";
 import classes from "./styles.module.css";
@@ -7,8 +7,7 @@ import PlayIcon from "../../assets/play.svg";
 
 const Post = () => {
   const router = useRouter();
-  const posts = Data.featuredData;
-
+  const posts = data2;
   const post = posts[router.query.movieTitle];
   if (!post) return <p></p>;
   console.log(post.moviedescription);
@@ -16,7 +15,7 @@ const Post = () => {
   return (
     <>
       <Head>
-        <title>Stream Tv and Movies Live and Online || movieTitle</title>
+        <title>{post.movieTitle}</title>
         <link
           rel="icon"
           href="https://assetshuluimcom-a.akamaihd.net/h3o/icons/favicon.ico.png"

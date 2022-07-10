@@ -9,7 +9,6 @@ import { Data } from "../data";
 
 
 export default function Home({ results }) {
-  console.log(Data.featuredData);
   return (
     <div>
       <Head>
