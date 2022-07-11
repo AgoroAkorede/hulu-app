@@ -1,12 +1,14 @@
 
 .thumbnail{
     height:3rem;
+    position: absolute;
+    top: -10;
 }
 .featured{
-    
     position: relative;
     margin-left:3.75vw;
     margin-right: 3.5vw;
+    margin-bottom: 3rem;
 }
 .results{
     margin-top:3rem;
@@ -64,7 +66,7 @@
 }
 .title{
     font-size: 1rem;
-    margin-left: 3rem;
+    /* margin-left: 3rem; */
     font-weight: 600;
 }
 

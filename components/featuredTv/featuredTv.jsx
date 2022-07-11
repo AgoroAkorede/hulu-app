@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState  } from "react";
 import Thumbnail2 from "../Thumbnail2/Thumbnail2";
 import classes from "./featuredTv.module.css";
 import Carousel from "../carousel/carousel";
@@ -8,16 +8,10 @@ function FeaturedTv({ results, title }) {
   const router = useRouter();
   return (
     <div className={classes.featured}>
-      <h1 className={classes.title}>{title}</h1>
-      <div
-        style={{
-          maxWidth: 1200,
-          marginLeft: "auto",
-          marginRight: "auto",
-          marginTop: 64,
-        }}
-      >
-        <Carousel>
+   
+      <div className={ classes.title }>{ title }</div>
+      {/* <Carousel props={ results}/> */}
+        <Carousel props={results}>
           <div id="results" className={classes.results}>
             {results.map((result) => (
               <div
@@ -25,7 +19,7 @@ function FeaturedTv({ results, title }) {
                   router.push(
                     `/shows/${result.id === 0 ? result.id : result.id - 1}`
                   )
-                  // console.log(result.id)
+                  // console.log(results.length) 
                 }
               >
                 <Thumbnail2
@@ -38,7 +32,6 @@ function FeaturedTv({ results, title }) {
           </div>
         </Carousel>
       </div>
-    </div>
   );
 }
 

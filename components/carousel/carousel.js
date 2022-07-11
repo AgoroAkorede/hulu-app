@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import './carousel.module.css'
 
-const Carousel = (props) => {
-    const {children} = props
+const Carousel = ({children,numbers}) => {
+    // const {children} = props
+    // children = props
 
     const [currentIndex, setCurrentIndex] = useState(0)
-    const [length, setLength] = useState(children.length)
+    const [length, setLength] = useState(numbers)
 
     const [touchPosition, setTouchPosition] = useState(null)
 

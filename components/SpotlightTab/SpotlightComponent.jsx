@@ -4,10 +4,10 @@ import './SpotlightComponent.module.css'
 
 function SpotlightComponent() {
 
-    const ref = useRef(setBackground(`linear-gradient(90deg, rgba(0, 0, 0, 0.8) -57.5%, rgba(0, 0, 0, 0) 98.72%),url("https://www.hulu.com/static/hitch/s3/attachments/ckzyp3x8ycmjp1k4e5pc5p9n9-ckuh9mwjj08j01v4q0ur1z6x1-ckqwp2zlfc1zx1u362echneor-sports-v3-1600x850-min-full.jpg")`))
-    
     const [ background, setBackground ] = useState(
         ` linear-gradient(90deg, rgba(0, 0, 0, 0.8) -57.5%, rgba(0, 0, 0, 0) 98.72%),url("https://www.hulu.com/static/hitch/s3/attachments/ckzyp3x8ycmjp1k4e5pc5p9n9-ckuh9mwjj08j01v4q0ur1z6x1-ckqwp2zlfc1zx1u362echneor-sports-v3-1600x850-min-full.jpg")`)
+
+    const ref = useRef(background)
     
     const [ styleText, setStyleText ] = useState("header_child")
     const [ position, setPosition ] = useState('17%')
@@ -28,7 +28,7 @@ function SpotlightComponent() {
             link:`linear-gradient(90deg, rgba(0, 0, 0, 0.8) -57.5%, rgba(0, 0, 0, 0) 98.72%),url("https://www.hulu.com/static/hitch/s3/attachments/ckzyp4x986iio1k7rkj43368r-ckuh9mwg007ws1v4zm8i4kk07-ckqiozsqemxsf1u3mw3ihh0ti-news-1600x850-2x-full.jpg")`
         },
         {
-            label: 'background2',
+            label: 'background3',
             link:`linear-gradient(90deg, rgba(0, 0, 0, 0.8) -57.5%, rgba(0, 0, 0, 0) 98.72%),url("https://www.hulu.com/static/hitch/s3/attachments/ckzyp5obb6ijq1k7rdave9sam-ckuh9mwj308re1v24oa5phjn9-ckqip2n0m9n5t1u2zln68cft8-biggest-events-1600x850-2x-full.jpg")`
         }
     ]
@@ -40,7 +40,7 @@ function SpotlightComponent() {
    
 
     return (
-        <div className={ classes.container } style={{backgroundImage:background}}>
+        <div id="spotlight" className={ classes.container } style={{backgroundImage:background}}>
             
             <div className={ classes.header }>
                 <ul className={ classes.headerParent }>

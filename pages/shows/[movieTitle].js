@@ -4,13 +4,13 @@ import Image from "next/image";
 import Head from "next/head";
 import classes from "./styles.module.css";
 import PlayIcon from "../../assets/play.svg";
+import Header from "../../components/Header/Header";
 
 const Post = () => {
   const router = useRouter();
   const posts = data2;
   const post = posts[router.query.movieTitle];
   if (!post) return <p></p>;
-  console.log(post.moviedescription);
 
   return (
     <>
@@ -22,7 +22,8 @@ const Post = () => {
         />
       </Head>
 
-      <div className={classes.page}>
+      <Header />
+      <div className={ classes.page }>
         <ul className={classes.categories}>
           <li className={classes.header}>{post.movieTitle}</li>
           <li className={classes.categories_content}>

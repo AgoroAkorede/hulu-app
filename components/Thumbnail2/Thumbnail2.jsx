@@ -12,7 +12,6 @@ function Thumbnail2({result}) {
                 src={
                     result.imageURl
                 }
-                
                 height={ 1080 } width={ 1920 } 
             />
             <p>{ result.movieTitle }</p>

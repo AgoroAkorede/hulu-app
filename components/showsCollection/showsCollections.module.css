@@ -1,5 +1,5 @@
 .showsCollections{
-   background-color: transparent;
+   background-color: rgb(20, 20, 20);
 }
 .list{
     display: flex;
@@ -19,14 +19,15 @@
 .title{
     position: absolute;
     left: 50%;
-    font-size: 1.2rem;
+    font-size: .8rem;
+    color: #a8a8a8;
 }
 .close_button{
     position: absolute;
     right: 1rem;
-    height: 1rem;
-    width: 1rem;
-    fill:white;
+    height: .8rem;
+    width: .8rem;
+    fill:#858484;
     cursor: pointer;
 }
 .top{
@@ -53,4 +54,7 @@
     font-size: 1.1;
     font-weight: 600;
     flex-wrap: wrap;
+}
+.featured{
+    margin-bottom: 3rem;
 }

@@ -20,9 +20,7 @@ export default function Home({ results }) {
       </Head>
       <HomepageTop />
       <HomepageMiddle results={results} />
-      <SpotlightComponent />
       <HomepageFooter />
-      
     </div>
   );
 }

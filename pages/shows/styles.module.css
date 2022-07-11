@@ -6,7 +6,7 @@
   list-style: none;
     width: 35vw;
     flex-wrap: wrap;
-    text-align: center;
+    /* text-align: center; */
 }
 .page {
   margin: 0;
