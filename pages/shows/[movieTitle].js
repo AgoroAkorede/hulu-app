@@ -4,7 +4,9 @@ import Image from "next/image";
 import Head from "next/head";
 import classes from "./styles.module.css";
 import PlayIcon from "../../assets/play.svg";
+import ArrowLeft from "../../assets/arrowleft.svg";
 import Header from "../../components/Header/Header";
+import Link from "next/link";
 
 const Post = () => {
   const router = useRouter();
@@ -23,7 +25,7 @@ const Post = () => {
       </Head>
 
       <Header />
-      <div className={ classes.page }>
+      <div className={classes.page}>
         <ul className={classes.categories}>
           <li className={classes.header}>{post.movieTitle}</li>
           <li className={classes.categories_content}>
@@ -49,6 +51,9 @@ const Post = () => {
             objectFit={"contain"}
           />
         </div>
+        <Link href={`/shows/${post.id-1}`} className={classes.icon}>
+          <ArrowLeft />
+        </Link>
       </div>
     </>
   );

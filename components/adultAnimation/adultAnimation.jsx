@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Thumbnail2 from "../Thumbnail2/Thumbnail2";
 import classes from "./adultAnimation.module.css";
-import Carousel from "../carousel/carousel";
 import { useRouter } from "next/router";
 
 function AdultAnimation({ results, title }) {
@@ -17,7 +16,6 @@ function AdultAnimation({ results, title }) {
           marginTop: 64,
         }}
       >
-        <Carousel>
           <div id="results" className={classes.results}>
             {results.map((result) => (
               <div
@@ -35,7 +33,7 @@ function AdultAnimation({ results, title }) {
               </div>
             ))}
           </div>
-        </Carousel>
+        
       </div>
     </div>
   );

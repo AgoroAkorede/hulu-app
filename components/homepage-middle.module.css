@@ -83,7 +83,7 @@
 .icon{
     width:1.2rem;
     animation: 1.2s infinite bounce;
-    -webkit-animation: 1.2s infinite bounce alternate cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    -webkit-animation: 0.8s infinite bounce alternate cubic-bezier(0.6, -0.28, 0.735, 0.045);
     cursor: pointer;
 }
 

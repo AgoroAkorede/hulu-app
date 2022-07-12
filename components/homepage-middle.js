@@ -4,11 +4,9 @@ import classes from "./homepage-middle.module.css";
 import ImageCard from "./image-card/image-card";
 import ScrollDown from "../assets/arrowdown.svg";
 import ShowsCollections from "./showsCollection/showsCollections";
-import Carousel from "./carousel/carousel";
 import SpotlightComponent from "./SpotlightTab/SpotlightComponent";
 
 function HomepageMiddle() {
-  const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
   const myRef = useRef(null);
   const [displayShow, setDisplayShow] = useState("none");
   const scrollDown = (ref) => {

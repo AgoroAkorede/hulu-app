@@ -12,6 +12,7 @@
     border:transparent;
     height: 150%;
     cursor:pointer;
+    position: relative;
 }
 .img:hover{
     height:10rem;
@@ -20,4 +21,10 @@
 .title{
     bottom:10%;
     font-weight: 700;
+}
+.originalHulu{
+    height: 2.5rem;
+    position: absolute;
+    top: 45%;
+    right: 5%;
 }

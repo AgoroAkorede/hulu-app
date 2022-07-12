@@ -52,7 +52,6 @@ function ShowsCollections({ img, title, content, close }) {
         results={Data.Binge_WorthyTV}
         title="BINGE-WORTHY TV"
       />
-      {/* <AdultAnimation  /> */}
     </div>
   );
 }
