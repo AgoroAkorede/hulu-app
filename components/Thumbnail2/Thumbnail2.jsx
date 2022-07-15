@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-import classes from "./Thumbnail2.module.css";
+import classes from "./Thumbnail2.module.scss";
 
 function Thumbnail2({ result }) {
   return (
@@ -9,13 +9,13 @@ function Thumbnail2({ result }) {
       <Image
         className={classes.img}
         layout="responsive"
-        src={result.imageURl}
+        src={result?.imageURl}
         height={1080}
         width={1920}
       />
-      <p>{result.movieTitle}</p>
-      <p>
-        {result.contentRating} • {result.categories}({result.productionYear}){" "}
+      <p className={classes.title}>{result?.movieTitle}</p>
+      <p className={classes.content}>
+        {result?.contentRating} • {result?.categories}({result?.productionYear}){" "}
       </p>
       {result?.originality === true ? (
         <img

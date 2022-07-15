@@ -1,6 +1,5 @@
 import React, { useState,useEffect,useRef } from 'react'
-import classes from './SpotlightComponent.module.css'
-import './SpotlightComponent.module.css'
+import classes from './SpotlightComponent.module.scss'
 
 function SpotlightComponent() {
 
@@ -44,14 +43,13 @@ function SpotlightComponent() {
             
             <div className={ classes.header }>
                 <ul className={ classes.headerParent }>
-                    
                     <li onClick={ () => {
                         setBackground(backgroundImage[ 0 ].link)
                         SetBorderStyle('17%','5.5rem')
                         setArticle('Catch your games at home or on the go. Stream live games from major college and pro leagues including the NCAA®, NBA, NHL, NFL, and more.')
                         setTitle("Live Sport")
 
-                    } } id="1" className={ classes.header_child }>live sports</li>
+                    } } id="1" style={{width:width*2}} className={ classes.header_child }>live sports</li>
                     
                     <li  onClick={ () => {
                         setBackground(backgroundImage[ 1 ].link)
@@ -59,7 +57,8 @@ function SpotlightComponent() {
                         setArticle("Keep pace with what's going on locally and globally with trusted opinions from all the top news networks.")
                         setTitle("Breaking News")
                         
-                    } } className={ classes.header_child } >breaking news</li>
+                        
+                    } }  className={ classes.header_child } >breaking news</li>
                     
                     <li onClick={ () => {
                         setBackground(backgroundImage[ 2 ].link)

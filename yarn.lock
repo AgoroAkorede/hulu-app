@@ -1576,6 +1576,11 @@
     "has-symbols" "^1.0.1"
     "object-keys" "^1.1.1"
 
+"ometa@0.2.2":
+  "integrity" "sha512-LZuoK/yjU3FvrxPjUXUlZ1bavCfBPqauA7fsNdwi+AVhRdyk2IzgP3JRnevvjzQ6fKHdUw8YISshf53FmpHrng=="
+  "resolved" "https://registry.npmjs.org/ometa/-/ometa-0.2.2.tgz"
+  "version" "0.2.2"
+
 "parent-module@^1.0.0":
   "integrity" "sha512-GQ2EWRpQV8/o+Aw8YqtfZZPfNRWZYkbidE9k5rpl/hC3vtHHBfGm2Ifi6qWV+coDGkrUKZAxE3Lot5kcsRlh+g=="
   "resolved" "https://registry.npmjs.org/parent-module/-/parent-module-1.0.1.tgz"
@@ -1717,6 +1722,13 @@
   "version" "0.21.0"
   dependencies:
     "loose-envify" "^1.1.0"
+
+"scss@^0.2.4":
+  "integrity" "sha512-4u8V87F+Q/upVhUmhPnB4C1R11xojkRkWjExL2v0CX2EXTg18VrKd+9JWoeyCp2VEMdSpJsyAvVU+rVjogh51A=="
+  "resolved" "https://registry.npmjs.org/scss/-/scss-0.2.4.tgz"
+  "version" "0.2.4"
+  dependencies:
+    "ometa" "0.2.2"
 
 "semver@^6.1.1", "semver@^6.1.2", "semver@^6.3.0":
   "integrity" "sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw=="

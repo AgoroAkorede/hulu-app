@@ -2,9 +2,10 @@ import { useRouter } from "next/router";
 import { Data, data2 } from "../../data";
 import Image from "next/image";
 import Head from "next/head";
-import classes from "./styles.module.css";
+import classes from "./styles.module.scss";
 import PlayIcon from "../../assets/play.svg";
 import ArrowLeft from "../../assets/arrowleft.svg";
+import ArrowRight from "../../assets/arrowright.svg";
 import Header from "../../components/Header/Header";
 import Link from "next/link";
 
@@ -13,6 +14,7 @@ const Post = () => {
   const posts = data2;
   const post = posts[router.query.movieTitle];
   if (!post) return <p></p>;
+  let page = router.query.movieTitle
 
   return (
     <>
@@ -51,9 +53,20 @@ const Post = () => {
             objectFit={"contain"}
           />
         </div>
-        <Link href={`/shows/${post.id-1}`} className={classes.icon}>
-          <ArrowLeft />
+        {/* <Link
+          href={`/shows/${parseInt(page) - 1}`}
+        >
+          <div className={classes.icon}>
+            <ArrowLeft />
+          </div>
         </Link>
+        <Link
+          href={`/shows/${parseInt(page) + 1}`}
+        >
+          <div className={classes.icon2}>
+            <ArrowRight />
+          </div>
+        </Link> */}
       </div>
     </>
   );

@@ -1,0 +1,137 @@
+.main{
+    margin:0;
+    padding:0;
+    min-height: 100vh;
+    background-image: url('https://www.hulu.com/static/hitch/s3/attachments/ckzoylttk003x1v6mcd4p0gk2-ckxgnvin29r771v5fyutjbf5c-bundle-6400x2640-desktop-1x.jpg');
+    background-size: 121%;
+    background-repeat: no-repeat;
+    background-position-x: -17rem;
+    width: 100vw;
+}
+$phone-size:540px;
+$tab-size:912px;
+$desktop-size:1024px;
+
+@media (max-width: ($tab-size)) {
+    .main {
+     background-image: url('https://www.hulu.com/static/hitch/s3/attachments/ckzix23lwm25o1k7r09ac8cjj-ckziwwfevs5xn1v5f4zy5gwvd-ckxgnvilb9r5y1v3x4sx8ys7a-bundle-3072x2640-tablet-1x-full-full.jpg');
+     background-position-x: 0rem;
+     background-size: 100%;
+    }
+    .page_title{
+        font-size: 1rem;
+        width:70%;
+    }
+    
+  
+  }
+  
+@media (max-width: ($desktop-size)) {
+    .page_title{
+        font-size: 1rem;
+        width:55%;
+    }
+    .main{
+        margin:0;
+        padding:0;
+        min-height: 100vh;
+        background-size: 125%;
+        background-repeat: no-repeat;
+        background-position-x: 0rem;
+        width: 100vw;
+    }
+}
+  @mixin flex {
+    display: flex;
+    justify-content: center;
+  }
+
+ 
+  @media (max-width: $phone-size ) {
+    .main {
+     background-image: url('https://www.hulu.com/static/hitch/s3/attachments/ckzix351js63w1v6mno9t6puw-ckxgnviiz9qts1v59ikettiyg-bundle-1500x2608-mobile-no-grad-full.jpg');
+     background-position-x: 0rem;
+     background-size: 100%;
+
+    }
+    .page_title{
+        font-size: 1.25rem;
+        width:80%;
+    }
+    .button{
+        width: 100vw;
+    }
+    .special_text{
+        font-size: .75rem;
+    }
+  }
+.content{
+    @include flex();
+    align-items: center;
+    flex-direction: column;
+    min-height: 90vh;
+}
+.title{
+    fill:rgb(30, 226, 128);
+    width:6rem;
+    font-weight:bold;
+    margin-left:1rem;
+    padding: 1rem;
+}
+
+.text{
+    color:rgb(30, 226, 128);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    text-align:center;
+    font-weight:600;
+}
+.logos{
+    display: flex;
+    padding: 1rem;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width:60vw;
+}
+.logo_image{
+    width:47.5vw;
+}
+.button{
+    padding: .75rem 1.5rem;
+    border:none;
+    background-color:#1ee280;
+    /*color: white;
+    */border-radius:4px;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    -ms-border-radius:4px;
+    -o-border-radius:4px;
+    text-transform: uppercase;
+    font-weight:600;
+    width: 50%;
+    height: 3rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition:all 500ms ;
+    -webkit-transition:all 500ms ;
+    -moz-transition:all 500ms ;
+    -ms-transition:all 500ms ;
+    -o-transition:all 500ms ;
+}
+.button:hover{
+    background-color:rgba(30, 226, 128, 0.582);
+}
+.page_title{
+    // font-size: 1.35rem;
+    margin-top: 0;
+    margin-bottom:1.5rem;
+    text-align:center;
+    // width:50vw;
+    font-weight:600;
+}
+.special_text{
+    text-decoration: underline;
+    text-align:center;
+    margin-bottom: 5rem;
+    letter-spacing: 0em;
+}

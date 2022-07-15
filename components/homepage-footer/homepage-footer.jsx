@@ -1,5 +1,5 @@
 import React from 'react'
-import classes from './homepage-footer.module.css'
+import classes from './homepage-footer.module.scss'
 
 function HomepageFooter() {
     return (

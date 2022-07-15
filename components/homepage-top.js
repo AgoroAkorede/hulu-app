@@ -1,5 +1,5 @@
-import classes from "./homepage-top.module.css";
 import Header from "./Header/Header";
+import classes from './homepage-top.module.scss';
 
 function HomepageTop() {
   return (
@@ -14,10 +14,10 @@ function HomepageTop() {
             alt="logos"
           />
         </div>
-        <p className={classes.page_title}>
+        <div className={classes.page_title}>
           Get The endless entertainment, live sports, and the shows and movies
           you love.
-        </p>
+        </div>
         <button className={classes.button}>Get The Disney Bundle</button>
         <p className={classes.special_text}>Sign up for Hulu only</p>
       </div>

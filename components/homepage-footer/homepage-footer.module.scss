@@ -1,0 +1,51 @@
+.homepage_footer{
+    background-color: rgb(206, 205, 205);
+    min-height: 50vh;
+    color: rgb(29, 28, 28);
+    margin: 0;
+    padding: 4rem;
+    font-size: .95rem;
+    font-weight: 500;
+}
+.homepage_footer_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.homepage_footer_link{
+    list-style: none;
+    font-size: .85rem;
+    font-weight: 200;
+    cursor: pointer;
+}
+.header{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+.arrow{
+    width:1.2rem;
+    margin-left: 2rem;
+    fill: gray;
+    transform: rotateX(180deg) translateY(35%);
+    -webkit-transform: rotateX(180deg) translateY(35%);
+    -moz-transform: rotateX(180deg) translateY(35%);
+    -ms-transform: rotateX(180deg) translateY(35%);
+    -o-transform: rotateX(180deg) translateY(35%);
+    cursor: pointer;
+}
+
+$phone-size:540px;
+$tab-size:912px;
+$desktop-size:1024px;
+
+@media (max-width: ($phone-size)) {
+    .homepage_footer_content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+  
+}

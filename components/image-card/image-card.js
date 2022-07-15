@@ -1,5 +1,5 @@
 import React from 'react'
-import classes from './image-card.module.css';
+import classes from './image-card.module.scss';
 import requests from '../../utils/requests'
 import {useRouter} from 'next/router'
 import TvMastHead from '../TvMastHead/TvMastHead'

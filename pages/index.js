@@ -8,6 +8,7 @@ import HomepageFooter from "../components/homepage-footer/homepage-footer";
 import { Data } from "../data";
 
 
+
 export default function Home({ results }) {
   return (
     <div>
@@ -24,18 +25,18 @@ export default function Home({ results }) {
     </div>
   );
 }
-export async function getServerSideProps(context) {
-  const genre = context.query.genre;
+// export async function getServerSideProps(context) {
+//   const genre = context.query.genre;
 
-  const request = await fetch(
-    `https://api.themoviedb.org/3/${
-      requests[genre]?.url || requests.fetchTrending.url
-    }`
-  ).then((response) => response.json());
+//   const request = await fetch(
+//     `https://api.themoviedb.org/3/${
+//       requests[genre]?.url || requests.fetchTrending.url
+//     }`
+//   ).then((response) => response.json());
 
-  return {
-    props: {
-      results: request.results,
-    },
-  };
-}
+//   return {
+//     props: {
+//       results: request.results,
+//     },
+//   };
+// }

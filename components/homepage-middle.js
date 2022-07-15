@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 
-import classes from "./homepage-middle.module.css";
+import classes from "./homepage-middle.module.scss";
 import ImageCard from "./image-card/image-card";
 import ScrollDown from "../assets/arrowdown.svg";
 import ShowsCollections from "./showsCollection/showsCollections";
@@ -18,10 +18,10 @@ function HomepageMiddle() {
 
   return (
     <div>
-      <div className={classes.main}>
+      <div className={classes.mainMiddle}>
         <div className={classes.top}>
           <p className={classes.text}>INCLUDED IN ALL PLANS</p>
-          <h1 className={classes.title}>All the TV you love</h1>
+          <h1 className={classes.title_middle}>All the TV you love</h1>
         </div>
         <p className={classes.normal_text}>
           Stream full seasons of exclusive series, current-season episodes, hit
@@ -61,10 +61,11 @@ function HomepageMiddle() {
           />
         </div>
         <div>
-          <p className={classes.text}>
+          <p className={classes.text_middle}>
             HULU + LIVE TV, NOW WITH DISNEY+ AND ESPN+
           </p>
-          <p className={classes.title}>Live TV Makes It Better</p>
+          <p className={classes.title_middle}>Live TV Makes It Better</p>
+          <div className={ classes.context }>
           <p className={classes.normal_text}>
             Make the switch from cable. Get 75+ top channels on Hulu with your
             favorite live sports, news, and events - plus the entire Hulu
@@ -81,6 +82,8 @@ function HomepageMiddle() {
             valid for eligible subscribers only. Unlimited DVR recording is not
             available for on-demand shows.
           </p>
+         
+          </div>
           <div className={classes.special_text}>view channels in your area</div>
 
           <div className={classes.scrollDown} onClick={()=>scrollDown(myRef)}>

@@ -1,0 +1,138 @@
+.showsCollections{
+   background-color: hsl(0, 0%, 7%);
+   overflow-x: hidden;
+   
+}
+.list{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    position: absolute;
+    top:0;
+    /* left: 0; */
+    border-bottom: solid gray 1px;
+    z-index: 3;
+    width: 100%;
+    justify-content:space-between;
+    padding: 2rem;
+    /* margin: 1rem; */
+
+}
+.title{
+    position: absolute;
+    left: 50%;
+    font-size: .8rem;
+    color: #a8a8a8;
+}
+.close_button{
+    position: absolute;
+    right: 1rem;
+    height: .8rem;
+    width: .8rem;
+    fill:#858484;
+    cursor: pointer;
+}
+.top{
+    height: 100vh;
+    position: relative;
+}
+.img{
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.header{
+    position: absolute;
+    font-size: 3rem;
+    top: 50%;
+    left: 3%;
+}
+.content{
+    position: absolute;
+    top: 65%;
+    left: 3%;
+    width: 40%;
+    font-size: 1.1;
+    font-weight: 600;
+    flex-wrap: wrap;
+}
+.featured{
+    margin-bottom: 3rem;
+}
+$phone-size:540px;
+$tab-size:912px;
+$desktop-size:1024px;
+
+@media (max-width: ($tab-size)) {
+  .content{
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    width: 60%;
+    font-size: 1.2rem;
+
+  }
+  .header{
+    position: absolute;
+    font-size: 3.5rem;
+    top: 32%;
+    left: 3%;
+}
+    .img{
+       height: 90vh;
+       width: 150%;
+       top:0;
+       left: -10rem;
+    }
+    .title{
+        font-size: 1.1rem;
+     
+    }
+    .close_button{
+
+        height: 1.1rem;
+        width: 1.1rem;
+    }
+  
+}
+@media (max-width: ($phone-size)) {
+    .content{
+      position: absolute;
+      top: 50%;
+      left: 3%;
+      width: 80%;
+      font-size: 1.2rem;
+  
+    }
+    .header{
+      position: absolute;
+      font-size: 3.5rem;
+      top: 32%;
+      left: 3%;
+  }
+      .img{
+         height: 80vh;
+         width: 170vw;
+         top:0;
+         left: -15rem;
+      }
+      .show_more {
+        // display: flex;
+        visibility: visible;
+    } 
+    .title{
+        font-size: 1.25rem;
+        left: 40%;
+    }
+    .close_button{
+        height: 1.15rem;
+        width: 1.15rem;
+    }
+  }
+.show_more {
+    // display: none;
+    visibility: hidden;
+
+} 

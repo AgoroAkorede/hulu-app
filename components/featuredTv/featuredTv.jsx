@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Thumbnail2 from "../Thumbnail2/Thumbnail2";
-import classes from "./featuredTv.module.css";
+import classes from "./featuredTv.module.scss";
 import { useRouter } from "next/router";
 
 function FeaturedTv({ results, title }) {
@@ -11,9 +11,8 @@ function FeaturedTv({ results, title }) {
 
   const [touchPosition, setTouchPosition] = useState(null);
   let [leftArrow, setleftArrow] = useState("none");
-  const [rightArrow, setrightArrow] = useState("flex");
-
-  // Set the length to match current children from props
+  const [ rightArrow, setrightArrow ] = useState("flex");
+  
   useEffect(() => {
     setLength(results.length);
   }, [results]);
