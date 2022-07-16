@@ -22,6 +22,21 @@
     align-items: center;
     @include flex;
 }
+.collections{
+    position: absolute;
+    top:40vh;
+    width: 85vw;
+    z-index: 100;
+    background-color: hsl(240, 8%, 10%);
+    height: 170vh;
+    margin-bottom: 100vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    
+}
+.collections::-webkit-scrollbar{
+    display: none;
+}
 .normal_text{
     width:50vw;
     display: flex;
@@ -85,7 +100,17 @@
     .special_text{
         font-size:.5em;
     }
-  
+    .collections{
+        position: absolute;
+        top:-100vh;
+        width: 100vw;
+        z-index: 100;
+        background-color: hsl(240, 8%, 10%);
+        height: 372vh;
+        margin-bottom: 100vh;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+    }
   }
   @media (max-width: ($phone-size)) {
     .title_middle{
@@ -107,7 +132,26 @@
         visibility: hidden;
     }
     
-  
+    .collections{
+        position: absolute;
+        top:-105vh;
+        width: 100vw;
+        z-index: 100;
+        background-color: hsl(240, 8%, 10%);
+        min-height: 713vh;
+        margin-bottom: 100vh;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+    }
+    // .mainMiddle{
+    //     min-height: 1300vh;
+    //    flex-direction: column;
+    //    align-items: center;
+    //    font-weight:500;
+    //    position: relative;
+    //    margin-top: 2rem;
+    //    @include flex;
+    // }
   }
 .context{
     display: flex;
@@ -147,19 +191,4 @@
     -ms-transform:translateY(10%)   ;
     -o-transform:translateY(10%)   ;
 }
-}
-.collections{
-    position: absolute;
-    top:40vh;
-    width: 85vw;
-    z-index: 100;
-    background-color: hsl(240, 8%, 10%);
-    height: 170vh;
-    margin-bottom: 100vh;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-    
-}
-.collections::-webkit-scrollbar{
-    display: none;
 }

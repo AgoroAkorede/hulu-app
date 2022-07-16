@@ -128,13 +128,13 @@ $desktop-size:1024px;
 }
 @media (max-width: ($phone-size)) {
     .results{
-        // margin-top:2rem;
         margin-left: 1.5rem;
         display:grid;
         overflow-y:hidden;
         grid-gap:1rem;
         grid-template-columns:repeat(4,100%);
         overflow-x: hidden;
+      
     }
     .title{
         margin-left: 1.5rem;

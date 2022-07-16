@@ -31,6 +31,7 @@ function HomepageMiddle() {
           <ShowsCollections
             img="https://hulu-matchmaker.s3.amazonaws.com/attachments/ckig8ajpl0mxx1u41vj24fx1o-bobs-burgers-v2-modal-masthead-1600x900-2x.jpg"
             title="Tv Shows"
+            // className={classes.collections}
             content="Watch past seasons of exclusive shows, current-season episodes the day after they air, 40+ acclaimed series from FX, classic favorites, and tons more."
             close={() => setDisplayShow("none")}
           />

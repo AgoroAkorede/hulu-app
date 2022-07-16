@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React, { useState, useEffect } from "react";
 import FeaturedTv from "../featuredTv/featuredTv";
 import AdultAnimation from "../adultAnimation/adultAnimation";
 import { Data, data2 } from "../../data";
@@ -7,7 +7,7 @@ import Image from "next/image";
 import CloseModal from "../../assets/closeModal.svg";
 import ShowMore from "../showMore/showMore";
 
-function ShowsCollections({ img, title, content, close }) {
+const ShowsCollections=({ img, title, content, close })=> {
 
   return (
     <div className={classes.showsCollections}>
@@ -28,48 +28,39 @@ function ShowsCollections({ img, title, content, close }) {
         results={Data.featuredData}
         title="FEATURED TV"
       />
- 
-        <ShowMore results={Data.featuredData}  />
+
+      <ShowMore results={Data.featuredData} />
 
       <FeaturedTv
         className={classes.featured}
         results={Data.adultAnimation}
         title="ADULT ANIMATION"
       />
-      <ShowMore results={ Data.adultAnimation } />
-      
+      <ShowMore results={Data.adultAnimation} />
+
       <FeaturedTv
         className={classes.featured}
         results={Data.FXonHulu}
         title="FX ON HULU"
       />
-      <ShowMore results={ Data.FXonHulu } />
-      
+      <ShowMore results={Data.FXonHulu} />
+
       <FeaturedTv
         className={classes.featured}
         results={Data.RealityTv}
         title="REALITY TV"
       />
-      <ShowMore results={ Data.RealityTv } />
-      
+      <ShowMore results={Data.RealityTv} />
+
       <FeaturedTv
         className={classes.featured}
         results={Data.Binge_WorthyTV}
         title="BINGE-WORTHY TV"
       />
 
-      <ShowMore results={ Data.Binge_WorthyTV } />
-      
+      <ShowMore results={Data.Binge_WorthyTV} />
     </div>
   );
-}
-
-export async function getStaticProps() {
-  return {
-    props: {
-      Data,
-    },
-  };
 }
 
 export default ShowsCollections;

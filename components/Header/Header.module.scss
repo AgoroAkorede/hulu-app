@@ -1,0 +1,86 @@
+.title {
+  fill: rgb(30, 226, 128);
+  width: 7rem;
+  font-weight: bold;
+  margin-left: 1rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  background-color: rgb(30, 226, 128);
+  /*color: white;
+    */
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: 600;
+  /* width: 50%; */
+  height: 3rem;
+  margin: 1rem 2rem;
+  cursor: pointer;
+}
+.nav_button {
+  padding: 1rem 1.5rem;
+  border: none;
+  background-color: rgb(105, 104, 104);
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: 600;
+  /* width: 50%; */
+  height: 2rem;
+  margin: 1rem 2rem;
+  cursor: pointer;
+  color: white;
+  font-size: 1.05rem;
+  display: none;
+}
+$phone-size: 540px;
+$tab-size: 912px;
+$small-tab-size: 820px;
+$desktop-size: 1024px;
+
+@media (max-width: ($tab-size)) {
+  .title {
+    width: 5rem;
+  }
+  .button {
+    padding: 0.75rem 1rem;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    height: 2.25rem;
+    margin: 0.75rem 1.5rem;
+    cursor: pointer;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: ($phone-size)) {
+  .title {
+    width: 6rem;
+  }
+  .button {
+    display: none;
+  }
+  .nav_button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+}

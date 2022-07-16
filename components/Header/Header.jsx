@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "./Header.module.css";
+import classes from "./Header.module.scss";
 import Logo from "../../assets/hulu.svg";
 import Link from "next/link";
 
@@ -11,7 +11,8 @@ function Header() {
           <Logo />
         </div>
       </Link>
-      <button className={classes.button}>Sign Up</button>
+      <button className={ classes.button }>Sign Up</button>
+      <button className={classes.nav_button}>=</button>
     </div>
   );
 }

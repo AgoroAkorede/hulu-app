@@ -1,53 +1,137 @@
-.img{
+.img {
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  position: relative;
+  height: 5rem;
+  // z-index: 1;
+  &::before {
+    content: "";
+    position: absolute;
+    min-width: 100%;
     border-radius: 12px;
     -webkit-border-radius: 12px;
     -moz-border-radius: 12px;
     -ms-border-radius: 12px;
     -o-border-radius: 12px;
-    position: relative;
-    height:5rem;
-}
-.container{
-    background-color: transparent;
-    border:transparent;
-    height: 150%;
-    cursor:pointer;
-    position: relative;
-}
-.img:hover{
-    height:10rem;
+    min-height: 100%;
+    z-index: -1;
+    background: linear-gradient(
+        156.82deg,
+        rgba(41, 41, 41, 0.6) 4.58%,
+        rgba(48, 47, 47, 0.246) 69.61%
+      ),
+      linear-gradient(
+        24.5deg,
+        rgba(46, 42, 42, 0.2) 4.71%,
+        rgba(22, 22, 22, 0.055) 71.49%
+      );
+    animation: gradientAnimation 15s infinite linear alternate-reverse;
+    -webkit-animation: gradientAnimation 15s infinite linear alternate-reverse;
+  }
 }
 
-.title{
-    bottom:10%;
-    font-weight: 700;
+.image_gradient {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  height: 58%;
+  z-index: -1;
+  background: linear-gradient(
+      156.82deg,
+      rgba(41, 41, 41, 0.6) 4.58%,
+      rgba(0, 0, 0, 0) 69.61%
+    ),
+    linear-gradient(
+      24.5deg,
+      rgba(0, 0, 0, 0.2) 4.71%,
+      rgba(22, 22, 22, 0) 71.49%
+    );
+  //   background-color: white;
 }
-.originalHulu{
-    height: 2.5rem;
-    position: absolute;
-    top: 45%;
-    right: 5%;
+
+.container {
+  background-color: transparent;
+  border: transparent;
+  max-height: 100%;
+  cursor: pointer;
+  position: relative;
 }
-.content{
-    font-size: 1rem;
+
+// .img:hover{
+//     height:10rem;
+// }
+
+.title {
+  bottom: 10%;
+  font-weight: 700;
 }
-$phone-size:540px;
-$tab-size:912px;
-$desktop-size:1024px;
+.originalHulu {
+  height: 2.5rem;
+  position: absolute;
+  top: 45%;
+  right: 5%;
+}
+.content {
+  font-size: 1rem;
+}
+$phone-size: 540px;
+$tab-size: 912px;
+$desktop-size: 1024px;
 
 @media (max-width: ($tab-size)) {
-    .title{
-        font-size: 1.3rem;
-    }
-    .content{
-        font-size: 1.15rem;
-    }
+  .title {
+    font-size: 1.3rem;
+  }
+  .content {
+    font-size: 1.15rem;
+  }
 }
 @media (max-width: ($phone-size)) {
-    .title{
-        font-size: 1.375rem;
-    }
-    .content{
-        font-size: 1.25rem;
-    }
+  .title {
+    font-size: 1.375rem;
+  }
+  .content {
+    font-size: 1.25rem;
+  }
+  .originalHulu {
+    height: 2.5rem;
+    position: absolute;
+    top: 35%;
+    right: 5%;
+  }
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background: linear-gradient(
+        156.82deg,
+        rgba(41, 41, 41, 0.6) 4.58%,
+        rgba(48, 47, 47, 0.246) 69.61%
+      ),
+      linear-gradient(
+        24.5deg,
+        rgba(46, 42, 42, 0.2) 4.71%,
+        rgba(22, 22, 22, 0.055) 71.49%
+      );
+  }
+  100% {
+    background: linear-gradient(
+        24.5deg,
+        rgba(22, 22, 22, 0.055) 4.71%,
+        rgba(46, 42, 42, 0.2) 71.49%
+      ),
+      linear-gradient(
+        156.82deg,
+        rgba(19, 18, 18, 0.246) 4.58%,
+        rgba(41, 41, 41, 0.6) 69.61%
+      );
+  }
 }

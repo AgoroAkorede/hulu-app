@@ -13,6 +13,12 @@
 }
 .results{
     margin: 1.5rem;
+   
+}
+.thumbnail{
+    height:3rem;
+    position: absolute;
+    top: -10;
 }
 $phone-size:540px;
 $tab-size:912px;
@@ -25,5 +31,9 @@ $desktop-size:1024px;
     }
     .button{
         font-size: 1.25rem;
+    }
+    .results{
+        margin: 0rem;
+        width: 85%;
     }
 }

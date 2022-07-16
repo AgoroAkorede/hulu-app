@@ -6,6 +6,7 @@ import classes from "./Thumbnail2.module.scss";
 function Thumbnail2({ result }) {
   return (
     <div className={classes.container}>
+      {/* <div className={classes.image_gradient}></div> */}
       <Image
         className={classes.img}
         layout="responsive"

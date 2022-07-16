@@ -1,7 +1,6 @@
 .showsCollections{
    background-color: hsl(0, 0%, 7%);
    overflow-x: hidden;
-   
 }
 .list{
     display: flex;
@@ -9,13 +8,12 @@
     list-style: none;
     position: absolute;
     top:0;
-    /* left: 0; */
     border-bottom: solid gray 1px;
     z-index: 3;
     width: 100%;
     justify-content:space-between;
     padding: 2rem;
-    /* margin: 1rem; */
+
 
 }
 .title{
@@ -60,10 +58,13 @@
 }
 .featured{
     margin-bottom: 3rem;
+   
 }
 $phone-size:540px;
 $tab-size:912px;
+$small-tab-size:820px;
 $desktop-size:1024px;
+
 
 @media (max-width: ($tab-size)) {
   .content{
@@ -81,10 +82,10 @@ $desktop-size:1024px;
     left: 3%;
 }
     .img{
-       height: 90vh;
-       width: 150%;
+       height: 120vh;
+       width: 200%;
        top:0;
-       left: -10rem;
+       left: -25rem;
     }
     .title{
         font-size: 1.1rem;
@@ -101,7 +102,7 @@ $desktop-size:1024px;
     .content{
       position: absolute;
       top: 50%;
-      left: 3%;
+      left: 10%;
       width: 80%;
       font-size: 1.2rem;
   
@@ -110,13 +111,13 @@ $desktop-size:1024px;
       position: absolute;
       font-size: 3.5rem;
       top: 32%;
-      left: 3%;
+      left: 10%;
   }
       .img{
-         height: 80vh;
-         width: 170vw;
+         height: 95vh;
+         width: 250vw;
          top:0;
-         left: -15rem;
+         left: -1rem;
       }
       .show_more {
         // display: flex;
@@ -130,9 +131,12 @@ $desktop-size:1024px;
         height: 1.15rem;
         width: 1.15rem;
     }
+    .showsCollections{
+        overflow-x: hidden;
+        width: 100vw;
+     }
   }
 .show_more {
-    // display: none;
     visibility: hidden;
 
 } 
